@@ -131,7 +131,51 @@ console.log(result);
 * Возвращаемся к составлению строки поселения в отель
 */
 
+// const welcomeMsg = `Гість ${firstName} ${lastName} заселяється в ${type} номер ${room}`;
+// console.log(welcomeMsg);
+
 // const quantity = 15;
 // const orderMsg = `Ви замовили ${quantity} холодильників.`;
-
 // console.log(orderMsg);
+
+
+/* Нормализация с методом toLowerCase() */
+
+// let brand = prompt('Давай бренд');
+// brand = brand.toLowerCase();
+// console.log(brand);
+
+
+/* Поиск в строке с методом includes() */
+
+// const blacklistedWord1 = 'спам';
+// const blacklistedWord2 = 'распродажа';
+
+// const string1 = 'Привет, я принц Абдул, это не спам, предлагаю тебе миллион!';
+// const string2 = 'Самая большая РАСПРОДАЖА этой недели, не пропустите!';
+// const string3 = 'Рекламная кампания #fatlivesmatter';
+
+// console.log(string1.includes(blacklistedWord1));
+// console.log(string1.includes(blacklistedWord2));
+
+// console.log(string2.includes(blacklistedWord1));
+// const normalizedString2 = string2.toLowerCase();
+// console.log(normalizedString2.includes(blacklistedWord2));
+/*аналогично*/
+// console.log(string2.toLowerCase().includes(blacklistedWord2));
+
+// console.log(string3.includes(blacklistedWord1));
+// console.log(string3.includes(blacklistedWord2));
+
+
+/* Приведение (преобразование) типов к числу */
+
+// console.log('10' > 5);
+
+
+/* Операторы равенства (== и ===) и неравенства (!= и !==)
+* "ВСЕГДА ИСПОЛЬЗУЕМ СТРОГОЕ РАВЕНСТВО (===) И НЕРАВЕНСТВО (!==)"
+*/
+
+const isEqual = 5 == 5;
+console.log(isEqual);
