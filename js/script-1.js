@@ -177,5 +177,27 @@ console.log(result);
 * "ВСЕГДА ИСПОЛЬЗУЕМ СТРОГОЕ РАВЕНСТВО (===) И НЕРАВЕНСТВО (!==)"
 */
 
-const isEqual = 5 == 5;
-console.log(isEqual);
+// const isEqual = 5 == 5;
+// console.log(isEqual);
+
+const btnAdd = document.querySelector('button[data-add]');
+const valueInput = document.querySelector('input[data-value]');
+const resetBtn = document.querySelector('button[data-reset]');
+const outputEl = document.querySelector('.js-output span');
+
+let total = 0;
+
+btnAdd.addEventListener('click', function () {
+    console.log('click ho ho ho');
+
+    const value = Number(valueInput.value);
+
+    total += value;   
+    outputEl.textContent = total;
+    valueInput.value = '';
+});
+
+resetBtn.addEventListener('click', function () {
+    total = 0;
+    outputEl.textContent = total;
+});
